@@ -1,0 +1,157 @@
+*{
+    font-family: 'Space Mono', monospace;
+    font-size: 15px;
+    
+}
+
+body, html{
+    background-image: linear-gradient(#4C3A51, #774360);
+    background-size: cover;
+    height:100%;
+    left: 0;
+    top: 0;  
+    color:#E7AB79;
+    margin: 0;
+    padding:0;
+
+}
+
+.header1{
+    /* padding: 12px 15px 12px 12px; */
+    width: 100%;
+    color:#4C3A51;
+    background: #E7AB79;
+}
+
+.content-header{
+    outline: 1px solid;
+    box-shadow: 1px rgba(255, 255, 255, 0);
+    max-width:700px;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    margin-top:30px;
+}
+
+#top-bar-terminal{
+    background-color: #E7AB79;
+    height: 50px;
+    color: #4C3A51;
+    border: 1px solid #E7AB79 ;
+}
+#top-bar-terminal h3{
+    top:0;
+    float:left;
+    clear: left;
+    padding-left: 20px;
+}
+#top-bar-terminal p{
+    top: 0;
+    float: right;
+    clear: right;
+    padding-right: 20px;
+}
+.content-header h4{
+    clear: both;
+    max-width: 700px;
+    border-bottom: 1px solid #E7AB79;
+    color : #E7AB79;
+    margin-top:-2px;
+    text-align: center;
+
+}
+
+
+.konten-isi{
+    margin-top:-10px;
+
+}
+.konten-isi p{
+    max-width:650px;
+    width: 100%;
+    margin:0 auto;
+    padding:10px;
+}
+.konten-isi h1{
+    max-width:650px;
+    width: 100%;
+    margin:0 auto;
+    padding:10px;
+    font-size:5em;
+    padding-top:-30px;
+}
+.konten-isi a{
+    color:wheat;
+    text-decoration: none;
+}
+.konten-isi a:hover{
+    color:#E7AB79;
+    text-decoration:underline;
+}
+
+
+
+/**  hover button link for all site blog **/
+.everything-hover-link a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+.everything-hover-link a:hover{
+    text-decoration: underline;
+    color: orange;
+    font-weight: bold;
+}
+
+
+
+@media only screen and (max-width: 754px) {
+    .header1{
+        max-width: 300px;margin:0 auto;
+    }
+    .content-header{
+        max-width:500px;
+    }
+    .konten-isi h1{
+        font-size:2em;
+    }
+    .konten-isi img{
+        width:200px;
+        height: 150px;
+    }
+}
+
+
+
+
+
+
+
+body::before{
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(20, 20, 20, 0) 66%, rgba(0, 0, 0, 0.15) 33%);
+    background-size: 100% 5px;
+    z-index: 9999;
+    pointer-events: none;
+    animation: scanlines-anim 1.0s linear infinite;
+}
+
+@keyframes scanlines-anim{
+    0% {
+    background-position: 0px 0px;
+  }
+  100% {
+        background-position: 0px 15px;
+  }
+}
+
+@media only screen and (orientation: portrait){
+    body::before{
+        background-size: 100% 4px;}
+    }

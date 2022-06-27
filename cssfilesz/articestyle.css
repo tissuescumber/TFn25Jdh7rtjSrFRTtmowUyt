@@ -137,6 +137,21 @@ body, html{
     }
 }
 
+@media only screen and (max-width: 550px) {
+    .header1{
+        max-width: 200px;margin:0 auto;
+    }
+    .content-header{
+        max-width:350px;
+    }
+    .konten-isi h1{
+        font-size:2em;
+    }
+    .konten-isi img{
+        width:200px;
+        height: 150px;
+    }
+}
 
 
 
